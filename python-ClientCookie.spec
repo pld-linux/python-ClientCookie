@@ -10,6 +10,7 @@ Group:		Development/Languages/Python
 Source0:	http://wwwsearch.sourceforge.net/%{module}/src/%{module}-%{version}.tar.gz
 # Source0-md5:	5ccfe81880662e7a8911fd85b95b95e4
 URL:		http://wwwsearch.sourceforge.net/ClientCookie/
+Requires:       python-modules >= 2.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -41,7 +42,6 @@ python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{py_sitedir}
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT \

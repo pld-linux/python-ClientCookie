@@ -3,12 +3,12 @@
 Summary:	Python module for handling HTTP cookies on the client side
 Summary(pl):	Modu³ Pythona obs³ugi ciasteczek (cookies) po stronie klienta
 Name:		python-%{module}
-Version:	0.9.4a
-Release:	2
+Version:	1.0.3
+Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://wwwsearch.sourceforge.net/%{module}/src/%{module}-%{version}.tar.gz
-# Source0-md5:	e05381defee8e6303f77674fbdeb3eab
+# Source0-md5:	b0c9c02e298bdcc8cb7f4ae00a6e5701
 URL:		http://wwwsearch.sourceforge.net/ClientCookie/
 BuildRequires:	python
 %pyrequires_eq	python-modules

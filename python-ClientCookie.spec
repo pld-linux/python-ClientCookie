@@ -1,14 +1,14 @@
-%include	/usr/lib/rpm/macros.python
 %define 	module ClientCookie
 
 Summary:	Python package providing a module for handling HTTP cookies on the client side
 Summary(pl):	Pakiet zawieraj±cy modu³ obs³ugi ciasteczek (cookies) po stronie klienta
 Name:		python-%{module}
 Version:	0.9.3a
-Release:	0.2
+Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://wwwsearch.sourceforge.net/%{module}/src/%{module}-%{version}.tar.gz
+# Source0-md5:	5ccfe81880662e7a8911fd85b95b95e4
 URL:		http://wwwsearch.sourceforge.net/ClientCookie/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,10 +44,9 @@ install -d $RPM_BUILD_ROOT%{py_sitedir}
 
 python setup.py install \
         --root=$RPM_BUILD_ROOT \
-        --install-purelib=%{py_sitedir} \
         --optimize=2
 
-rm $RPM_BUILD_ROOT/%{py_sitedir}/%{module}/*.py
+rm $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{module}/*.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -55,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 
-%dir %{py_sitedir}/%{module}
-%{py_sitedir}/%{module}/*.py[co]
+%dir %{py_sitescriptdir}/%{module}
+%{py_sitescriptdir}/%{module}/*.py[co]
 
 %doc ChangeLog COPYING doc.html GeneralFAQ.html INSTALL README.html README.txt

@@ -44,8 +44,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{py_sitedir}
 
 python setup.py install \
-        --root=$RPM_BUILD_ROOT \
-        --optimize=2
+	--root=$RPM_BUILD_ROOT \
+	--optimize=2
 
 rm $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{module}/*.py
 

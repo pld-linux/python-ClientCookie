@@ -1,7 +1,7 @@
 %define 	module ClientCookie
 
-Summary:	Python package providing a module for handling HTTP cookies on the client side
-Summary(pl):	Pakiet zawieraj±cy modu³ obs³ugi ciasteczek (cookies) po stronie klienta
+Summary:	Python module for handling HTTP cookies on the client side
+Summary(pl):	Modu³ Pythona obs³ugi ciasteczek (cookies) po stronie klienta
 Name:		python-%{module}
 Version:	0.9.3a
 Release:	1
@@ -28,8 +28,8 @@ Perl module HTTP::Cookies, from the libwww-perl library.
 ClientCookie to modu³ Pythona obs³uguj±cy ciasteczka (cookies) po
 stronie klienta, u³atwia dostêp do stron korzystaj±cych z ciasteczek z
 poziomu skryptów. Dodatkowo dostarcza obs³ugê dla HTTP-EQUIV i
-Refresh, automatyczne dodawanie nag³ówka Referer i mozliwosc
-seek()-owania odpowiedzi. Te dodatki s± udostêpnione przez
+Refresh, automatyczne dodawanie nag³ówka Referer i mo¿liwo¶æ
+seek()owania odpowiedzi. Te dodatki s± udostêpnione przez
 rozszerzenie u³atwiaj±ce dodawanie nowych funkcji do urllib2.
 ClientCookie zosta³o stworzone na wzór modu³u HTTP::Cookies dla Perla
 pochodz±cego z biblioteki libwww-perl.
@@ -47,15 +47,13 @@ python setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
-rm $RPM_BUILD_ROOT/%{py_sitescriptdir}/%{module}/*.py
+rm $RPM_BUILD_ROOT%{py_sitescriptdir}/%{module}/*.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-
+%doc COPYING ChangeLog GeneralFAQ.html INSTALL README.html doc.html
 %dir %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}/*.py[co]
-
-%doc ChangeLog COPYING doc.html GeneralFAQ.html INSTALL README.html README.txt

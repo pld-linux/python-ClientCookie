@@ -1,7 +1,7 @@
 %define 	module	ClientCookie
 
 Summary:	Python module for handling HTTP cookies on the client side
-Summary(pl):	Modu³ Pythona obs³ugi ciasteczek (cookies) po stronie klienta
+Summary(pl.UTF-8):   ModuÅ‚ Pythona obsÅ‚ugi ciasteczek (cookies) po stronie klienta
 Name:		python-%{module}
 Version:	1.0.3
 Release:	1
@@ -25,15 +25,15 @@ implemented using an extension that makes it easier to add new
 functionality to urllib2. It has developed from a port of Gisle Aas'
 Perl module HTTP::Cookies, from the libwww-perl library.
 
-%description -l pl
-ClientCookie to modu³ Pythona obs³uguj±cy ciasteczka (cookies) po
-stronie klienta, u³atwia dostêp do stron korzystaj±cych z ciasteczek z
-poziomu skryptów. Dodatkowo dostarcza obs³ugê dla HTTP-EQUIV i
-Refresh, automatyczne dodawanie nag³ówka Referer i mo¿liwo¶æ
-seek()owania odpowiedzi. Te dodatki s± udostêpnione przez
-rozszerzenie u³atwiaj±ce dodawanie nowych funkcji do urllib2.
-ClientCookie zosta³o stworzone na wzór modu³u HTTP::Cookies dla Perla
-pochodz±cego z biblioteki libwww-perl.
+%description -l pl.UTF-8
+ClientCookie to moduÅ‚ Pythona obsÅ‚ugujÄ…cy ciasteczka (cookies) po
+stronie klienta, uÅ‚atwia dostÄ™p do stron korzystajÄ…cych z ciasteczek z
+poziomu skryptÃ³w. Dodatkowo dostarcza obsÅ‚ugÄ™ dla HTTP-EQUIV i
+Refresh, automatyczne dodawanie nagÅ‚Ã³wka Referer i moÅ¼liwoÅ›Ä‡
+seek()owania odpowiedzi. Te dodatki sÄ… udostÄ™pnione przez
+rozszerzenie uÅ‚atwiajÄ…ce dodawanie nowych funkcji do urllib2.
+ClientCookie zostaÅ‚o stworzone na wzÃ³r moduÅ‚u HTTP::Cookies dla Perla
+pochodzÄ…cego z biblioteki libwww-perl.
 
 %prep
 %setup -q -n %{module}-%{version}

@@ -1,7 +1,7 @@
 %define 	module	ClientCookie
 
 Summary:	Python module for handling HTTP cookies on the client side
-Summary(pl.UTF-8):   Moduł Pythona obsługi ciasteczek (cookies) po stronie klienta
+Summary(pl.UTF-8):	Moduł Pythona obsługi ciasteczek (cookies) po stronie klienta
 Name:		python-%{module}
 Version:	1.0.3
 Release:	1

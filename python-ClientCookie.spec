@@ -10,12 +10,12 @@ Version:	1.3.0
 Release:	1
 License:	BSD/ZPL 2.1
 Group:		Libraries/Python
-Source0:	http://wwwsearch.sourceforge.net/%{module}/src/%{module}-%{version}.tar.gz
+Source0:	http://wwwsearch.sourceforge.net/ClientCookie/src/%{module}-%{version}.tar.gz
 # Source0-md5:	7a43e4624299b3951ae1a442194d2185
 URL:		http://wwwsearch.sourceforge.net/ClientCookie/
 BuildRequires:	python
-%pyrequires_eq	python-modules
 BuildRequires:	rpmbuild(macros) >= 1.219
+%pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

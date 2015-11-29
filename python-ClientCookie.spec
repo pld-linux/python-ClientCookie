@@ -14,7 +14,7 @@ Source0:	http://wwwsearch.sourceforge.net/ClientCookie/src/%{module}-%{version}.
 # Source0-md5:	7a43e4624299b3951ae1a442194d2185
 URL:		http://wwwsearch.sourceforge.net/ClientCookie/
 BuildRequires:	python
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
